@@ -125,24 +125,36 @@ In addition to this script, you need
 
 * A shell (bash, zsh, PowerShell, cmd, ...)
 * A working Python3 installation
-* The `pyserial` module
+* Ideally `pipx`
 
-In the most simple case, you can install the dependencies like this:
+You can install this programm via `pip` or just copy it to a folder of oyur
+choice, but then you need to make sure, that `pyserial` ist installed as well.
 
-    python3 -m pip install -r requirements.txt
+The easiest way to install this is to use [pipx](https://github.com/pypa/pipx).
+Download the `et44fwupdater-0.1-py3-none-any.whl` or `et44fwupdater-0.1.tar.gz`
+form the latest [release](https://github.com/philpagel/ET44.py/releases) and
+install it like this:
 
-If pip complains that it won't do that, you need a virtual environment. So here
-it goes:
+```
+pipx install et44fwupdater-0.1.tar.gz
 
-    python3 -m venv venv                        # create venv
+# or
 
-    source venv/bin/activate                    # activate venv (LINUX/Mac)
-    venv\Scripts\activate                       # activate venv (Windows)
+pipx install et44fwupdater-0.1-py3-none-any.whl
+```
 
-    python3 -m pip install -r requirements.txt  # install dependencies
+Alternatively, you can install it with `pip`
 
-Now you are ready to use the tool. But remember: If you close the shell
-and come back later, you need to repeat the activation step.
+```
+python -m pip install et44fwupdater-0.1.tar.gz
+
+# or
+
+python -m pip install et44fwupdater-0.1-py3-none-any.whl
+```
+
+You may need to create a virtual enviroment first. If you don't know what that
+is, use `pipx` and thank me later.
 
 
 # Trouble shooting

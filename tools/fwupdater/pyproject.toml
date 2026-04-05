@@ -3,12 +3,10 @@ requires = ["setuptools >= 45.2.0", "wheel != 0.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name="ET44"
-version="0.5"
-description="Remote controlling East-Tester ET44/ET45 series lcr meters"
+name="ET44fwupdater"
+version="0.1"
+description="Firmware update tool for ET44xx/ET45xx LCR meters"
 dependencies= [
-   "pyvisa",
-   "pyvisa-py",
    "pyserial",
 ]
 requires-python = ">=3.10,<4"
@@ -16,7 +14,7 @@ authors = [{name = "Philipp Pagel", email = "phil@techbotch.org"}]
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-keywords = ["LCR meter", "SCPI", "remote control"]
+keywords = ["ET44xx", "ET45xx", "firmware update"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Programming Language :: Python"
